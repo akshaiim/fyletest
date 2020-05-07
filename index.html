@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="C:\Users\akshay\Documents\fyletest\fyletest.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous">
+    </script>
+    <script type="text/javascript" src="C:\Users\akshay\Documents\fyletest\fyletest.js"></script>
+
+    <style>
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+</style>
+
+    <title>Hello, world!</title>
+
+  </head>
+  <body>
+    <div class="container containerr">
+      <div class="row mx-auto">
+    <div class="col-6 card" style="margin-left:40px">
+  <div class="card-body">
+    <h5 id="primaryContent" class="card-title">Looking for a 
+lollipop alternative?</h5>
+    <p id="primaryContentBody" class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+    <a href="#" id="firstbtn" class="btn btn-primary">Primary Cta</a>
+    <a href="#" id="secondbtn" class="btn btn-inactive">Secondary Cta</a>
+
+  </div>
+</div>
+   <div class="col-4 text-left">
+  <div class="">
+        <img id="mt" class="mt-150" src="https://www.fylehq.com/assets/images/ach-payment/ach-hero.png">    
+        
+  </div>
+</div>
+
+
+</div>
+
+<div class="secondarycontent">
+  <div class="h1">
+  <h1>This is a heading in
+two lines</h1>
+
+</div>
+
+<img src="C:\Users\akshay\Documents\fyletest\assets\Group6.png">
+  </div>
+
+  <div class="thirdcontent">
+    <h3>Compare pricing today!</h3>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting.</p>
+  </div>
+    <div id="servings" class="row text-center" style="padding-top:50px">
+    
+        <div class="serving">
+
+            <div class="list-group list-group-horizontal serving">
+                <a id="25" onclick="myFunction(this.id)" class="list-group-item">25 Servings</a>
+                <a id="50" onclick="myFunction(this.id)" class="list-group-item">50 Servings</a>
+                <a id="100" onclick="myFunction(this.id)" class="list-group-item">100 Servings</a>
+                <a id="200"  onclick="myFunction(this.id)" class="list-group-item">200 Servings</a>
+            </div>
+
+        </div>
+      </div>
+     
+
+    <div id="plan">
+  <div class="row toggle">
+    <div class="col-4">
+      <p class="mb-0">Annual</p>
+      <p class="text-muted off">50% off</p>
+    </div>
+    <div class="col-4">
+     <label class="switch">
+  <input id="check" onclick="myFunction2()"  type="checkbox">
+  <span class="slider round"></span>
+</label>
+ 
+    </div>
+    <div class="col-4">
+      <p mt-0 pt-0>Monthly</p>
+    </div>
+  
+</div>
+</div>
+
+<div id="card-margin" class="card-deck container">
+  <div class="card cardd">
+       <div class="card-body">
+      <h5 class="card-title lollipop">lollipop</h5>
+      <p id="lollipop-cost" class="card-text log">$100 <span class="text-muted"> per month</span></p>
+      <p id="NoOfServing" class="card-text body-copy-5"><small class="text-muted">For 100  serving</small></p>
+    </div>  </div>
+  <div class="card cardd">
+        <div class="card-body">
+      <h5 class="card-title lollipop">Icecandy</h5>
+      <p id="icecandy-cost" class="card-text log">$200 <span class="text-muted"> per month</span></p>
+      <p id="NoOfServing2" class="card-text body-copy-5"><small class="text-muted">For 100  serving</small></p>
+    </div>
+  </div>
+  <div class="card carddd">
+         <div class="card-body lollipop">
+      <h5 class="card-title">Your savings
+with lollipop</h5>
+      <p id="saving" class="card-text logg">$100 </p>
+      <p id="saving-tag" class="card-text body-copy-5"><small class="text-muted">per Year</small></p>
+    </div>  
+  </div>
+</div>
+
+<div id="testimonials" class="mt-4">
+  <h3 class="say">Here’s what our customers have to say </h3>
+<div class="row mt-4 ml-0">
+    <div class="col-6 text-right" style="
+    padding-right: 80px;
+">
+      <img src="https://images.pexels.com/photos/428364/pexels-photo-428364.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+    </div>
+    <div class="col-6 ml-0" style="
+    padding-left: -40px !important;
+">
+
+      <blockquote style="
+    height: 50px;
+    width: 80px;
+    margin-bottom: 0px;
+"><p></p></blockquote>
+<p class="testimonials">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+<h2 class="Raja">Raja Ram</h2>
+<h2 class="Tip">Tip World</h2>
+<div style="margin-left: 40px">
+  <span class="dot mx-2" style="background-color: #0099FF"></span>
+  <span class="dot mx-2"></span>
+  <span class="dot mx-2"></span>
+  <span class="dot mx-2"></span>
+</div>
+    </div>
+
+
+  </div>
+
+
+
+  </div>
+
+        <div class="row mx-auto">
+    <div class="col-6 card text-left" style="margin-left: ">
+  <div class="card-body " style="
+    margin-top: 210px;
+    margin-left: 200px;
+">
+    <h5 id="primaryConten" class="card-title">Loved by users, 
+recommended by experts</h5>
+    <p id="primaryContentBod" class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+    <a href="#" id="firstbtn" class="btn btn-primary">Primary Cta</a>
+    
+  </div>
+</div>
+   <div id="last" class="col-4 text-right">
+  <div class="">
+        <img id="mt" class="mt-160" src="C:\Users\akshay\Documents\fyletest\assets\s.png">  
+        
+  </div>
+</div>
+
+
+</div>
+
+
+
+        </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
