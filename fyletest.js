@@ -1,40 +1,6 @@
-// document.getElementById("check").addEventListener("change", myFunction());
-//document.getElementById("check").addEventListener("click", myFunction(document.getElementByClassName("serving-select")));
-
-// function myFunction(clicked_id) {
-//   var id= clicked_id;
-//   var x = document.getElementById(id);
-//   x.classList.toggle("serving-select");
-
-//   if(document.getElementById("check").checked){
-//   	var lollipop = 1 * id;
-//   	var icecandy = 2 * id;
-//   	var saving = icecandy - lollipop;
-//   	document.getElementById("lollipop-cost").innerHTML = "$"+ lollipop //+= "<span class="text-muted"> per month</span>";
-//   	document.getElementById("icecandy-cost").innerHTML = "$" + icecandy //+= "<span class="text-muted"> per month</span>";
-//   	document.getElementById("saving").innerHTML = "$" + saving;
-
-
-
-//   }
-//   else{
-//   	var lollipop = 0.5 * id * 12;
-//   	var icecandy = 1 * id * 12;
-//   	var saving = icecandy - lollipop;
-//   	document.getElementById("lollipop-cost").innerHTML = "$"+lollipop;
-//   	document.getElementById("icecandy-cost").innerHTML = "$" + icecandy;
-//   	document.getElementById("saving").innerHTML = "$" + saving;
-
-//   }
-
-// }
-
-// document.getElementById("check").addEventListener("change", myFunction());
-//document.getElementById("check").addEventListener("click", myFunction(document.getElementByClassName("serving-select")));
-
 function myFunction(clicked_id) {
 var id = clicked_id;
-var x = document.getElementById(id);
+
 
   // Get the container element
 var btnContainer = document.getElementById("servings");
