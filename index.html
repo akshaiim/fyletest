@@ -1,4 +1,3 @@
-<!doctype html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
@@ -15,68 +14,7 @@
 
     <script type="text/javascript" defer src="fyletest.js"></script>
 
-    <style>
-      .switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
-}
-
-.switch input { 
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-input:checked + .slider {
-  background-color: #2196F3;
-}
-
-input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
-}
-
-input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
-}
-
-/* Rounded sliders */
-.slider.round {
-  border-radius: 34px;
-}
-
-.slider.round:before {
-  border-radius: 50%;
-}
-
-</style>
+  
 
     <title>Hello, world!</title>
 
@@ -94,7 +32,7 @@ lollipop alternative?</h5>
 
   </div>
 </div>
-   <div class="col-4 text-left">
+   <div class="col-4 primary-img text-left">
   <div class="">
         <img id="mt" class="mt-150" src="https://www.fylehq.com/assets/images/ach-payment/ach-hero.png">    
         
@@ -153,28 +91,36 @@ two lines</h1>
 </div>
 </div>
 
-<div id="card-margin" class="card-deck container">
-  <div class="card cardd">
-       <div class="card-body">
+<div id="card-margin" class="container">
+  <div class="row text-center">
+    <div id="first-card"  class="col-3">
+  <div  class="  card card-1 cardd">
+       <div  class=" card-body">
       <h5 class="card-title lollipop">lollipop</h5>
       <p id="lollipop-cost" class="card-text log">$100 <span class="text-muted"> per month</span></p>
       <p id="NoOfServing" class="card-text body-copy-5"><small class="text-muted">For 100  serving</small></p>
     </div>  </div>
-  <div class="card cardd">
+  </div>
+  <div class="col-3 margin-left">
+  <div class="card card-1 cardd">
         <div class="card-body">
       <h5 class="card-title lollipop">Icecandy</h5>
       <p id="icecandy-cost" class="card-text log">$200 <span class="text-muted"> per month</span></p>
       <p id="NoOfServing2" class="card-text body-copy-5"><small class="text-muted">For 100  serving</small></p>
     </div>
   </div>
-  <div class="card carddd">
-         <div class="card-body lollipop">
-      <h5 class="card-title">Your savings
+</div>
+<div class="col-3 margin-left">
+  <div class="card card-1 carddd">
+         <div  class="card-body">
+      <h5 class="card-title lollipop">Your savings
 with lollipop</h5>
       <p id="saving" class="card-text logg">$100 </p>
       <p id="saving-tag" class="card-text body-copy-5"><small class="text-muted">per Year</small></p>
     </div>  
   </div>
+</div>
+</div>
 </div>
 
 <div id="testimonials" class="mt-4">
@@ -214,7 +160,7 @@ with lollipop</h5>
     <div class="col-6 card text-left" style="margin-left: ">
   <div class="card-body " style="
     margin-top: 210px;
-    margin-left: 200px;
+    margin-left: 160px;
 ">
     <h5 id="primaryConten" class="card-title">Loved by users, 
 recommended by experts</h5>
@@ -223,11 +169,13 @@ recommended by experts</h5>
     
   </div>
 </div>
-   <div id="last" class="col-4 text-right">
-  <div class="">
-        <img id="mt" class="mt-160" src="assets/s.png">  
+   <div  class="col-6 ml-80 px-0">
+  <div class="card">
+    <div id="last" class="card-body">
+        <img class="mt-160" src="assets/s.png">  
         
   </div>
+</div>
 </div>
 
 
@@ -245,3 +193,4 @@ recommended by experts</h5>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   </body>
 </html>
+

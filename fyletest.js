@@ -53,6 +53,3 @@ function myFunction2() {
   console.log(current[0].id);
   myFunction(current[0].id);
 }
-
-
-
