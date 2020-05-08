@@ -33,29 +33,29 @@
 //document.getElementById("check").addEventListener("click", myFunction(document.getElementByClassName("serving-select")));
 
 function myFunction(clicked_id) {
-  var id = clicked_id;
-  var x = document.getElementById(id);
+var id = clicked_id;
+var x = document.getElementById(id);
 
   // Get the container element
-  var btnContainer = document.getElementById("servings");
+var btnContainer = document.getElementById("servings");
 
   // Get all buttons with class="btn" inside the container
-  var btns = btnContainer.getElementsByClassName("list-group-item");
+var btns = btnContainer.getElementsByClassName("list-group-item");
 
-  for (var i = 0; i < btns.length; i++) {
-    btns[i].addEventListener("click", function () {
-      var current = document.getElementsByClassName("serving-select");
+for (var i = 0; i < btns.length; i++) {
+btns[i].addEventListener("click", function () {
+var current = document.getElementsByClassName("serving-select");
 
       // If there's no active class
-      if (current.length > 0) {
-        current[0].className = current[0].className.replace(
-          " serving-select",
+if (current.length > 0) {
+  current[0].className = current[0].className.replace(
+  " serving-select",
           ""
         );
       }
 
       // Add the active class to the current/clicked button
-      this.className += " serving-select";
+  this.className += " serving-select";
     });
   }
 
